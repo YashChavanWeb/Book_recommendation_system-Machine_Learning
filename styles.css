@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Hide the top navbar */
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+/* Now you can use the Poppins font in your CSS */
+body {
+    font-family: 'Poppins', Arial;
+}
+
+.main {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', Arial;
+    color: #000000;
+}
+
+.header {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', Arial;
+}
+
+.bks {
+    color: #000;
+    font-family: 'Poppins', Arial;
+}
+
+.card {
+    background-color: black;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Poppins', Arial;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', Arial;
+}
+
+.card p {
+    font-size: 35px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    animation: pulse 1s infinite;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    margin: auto 0;
+    background-color: #f6f4f461;
+    width: 100%;
+    backdrop-filter: blur(100px);
+    color: white;
+    border-radius: 24px;
+}
+
+.details span {
+    font-size: 30px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.image {
+    max-width: 150px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    margin: 5px;
+    border: 2px solid white;
+}
+
+.image:hover {
+    opacity: 0.9;
+}
+
+.sidebar .sidebar-content,
+.sidebar {
+    padding: 20px;
+    font-family: 'Poppins', Arial;
+}
+
+.recommendation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Poppins', Arial;
+    align-content: center;
+    align-items: center;
+}
+
+.recommendation-item {
+    flex: 0 0 48%;
+    flex-direction: row;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial;
+    overflow: hidden;
+}
+
+.title-style {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', Arial;
+}
+
+.title-style span {
+    font-size: 37px;
+}
+
+.subheader-style {
+    font-size: 1.5em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: 'Poppins', Arial;
+}
+
+.stButton>button {
+    background-color: #ad0009;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', Arial;
+}
+
+.stButton>button:hover {
+    border: 3px solid #ad0009;
+    /* padding: 5px 20px; */
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+section[data-testid="stSidebar"] {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Style for sidebar headers */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+section[data-testid="stSidebar"] .stTextInput,
+section[data-testid="stSidebar"] .stSelectbox {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card .bleh {
+    font-size: 20px;
+}
